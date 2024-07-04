@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='main.css' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+</head>
+
+<body>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h3>Important Notice</h3>
+            <p>We do not save any data collected from you.</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <div class="w3-top" data-html2canvas-ignore="true">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="index.html" class="dontprint w3-bar-item w3-button w3-wide">RESUME BUILDER</a>
+            <div class="w3-right w3-hide-small">
+                <a href="javascript:downloadimage()" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i>
+                    Download</a>
+            </div>
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="rela-block page" id="doc2" contenteditable="true">
+        <div class="rela-block top-bar">
+            <div class="caps name">
+                <div class="abs-center">YOUR NAME</div>
+            </div>
+        </div>
+        <div class="side-bar">
+            <div class="mugshot">
+                <div class="logo">
+                    <input type="file" accept="image/*" onchange="preview_image(event)" data-html2canvas-ignore="true">
+                    <img width="200px" height="200px" id="pic" />
+                </div>
+            </div>
+            <p>Sample Address</p>
+            <p>Bhopal</p>
+            <p>+91-1234567890</p>
+            <p>email@gmail.com</p><br>
+            <p class="rela-block social linked-in">Linked-in </p>
+            <p class="rela-block social github">GitHub</p>
+            <p class="rela-block social web">Website/Portfolio</p>
+            <p class="rela-block caps side-header">SKills</p>
+            <p class="rela-block list-thing">Skill #1</p>
+            <p class="rela-block list-thing">Skill #2</p>
+            <p class="rela-block list-thing">Skill #3</p>
+            <p class="rela-block list-thing">Skill #4</p>
+            <p class="rela-block caps side-header">Education</p>
+            <p class="rela-block list-thing">Graduation</p>
+            <p class="rela-block list-thing">Higher Secondary</p>
+            <p class="rela-block list-thing">High School</p>
+        </div>
+        <div class="rela-block content-container">
+            <h2 class="rela-block caps title">Job title</h2>
+            <div class="rela-block separator"></div>
+            <div class="rela-block caps greyed">Profile</div>
+            <p class="long-margin">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, error soluta id
+                labore molestiae cum iure itaque tenetur voluptatum. Optio, officia. Ipsa at itaque ad neque. Sapiente
+                quidem voluptatem blanditiis eum, repellendus nulla quibusdam tenetur asperiores molestiae labore totam
+                ullam odio cumque accusamus est optio deleniti molestias adipisci cupiditate expedita? </p>
+            <div class="rela-block caps greyed">Experience</div>
+
+            <h3>Job #1</h3>
+            <p class="light">First job description</p>
+            <p class="justified">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ullam quo magni,
+                sunt id earum. Aspernatur, repudiandae incidunt iusto atque architecto eius ut, qui cumque minus
+                recusandae earum nisi sed rerum labore fugit! Ea dicta doloribus soluta illo suscipit. Culpa, sed? Nobis
+                tempore vel veniam vitae, quas iste fuga necessitatibus. </p>
+
+            <h3>Job #2</h3>
+            <p class="light">Second Job Description</p>
+            <p class="justified">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quasi ea vero
+                ut odio provident doloribus libero iste, beatae voluptatem tempora eum cum cumque. Quae consectetur quia
+                nisi fuga eos quis perspiciatis, vitae, eius quod dolore cumque, reprehenderit tempore eaque excepturi.
+                Error, cupiditate iure. In sunt facere repellat voluptas omnis.</p>
+
+            <h3>Job #3</h3>
+            <p class="light">Third Job Description</p>
+            <p class="justified">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis neque quo,
+                exercitationem eligendi, omnis magni aperiam laboriosam ex quasi debitis architecto itaque officia odit?
+                Impedit quisquam incidunt id, eaque necessitatibus neque? Voluptates ut accusamus alias nihil, quidem,
+                quibusdam dolorum dignissimos, impedit doloremque enim eaque beatae id rem debitis adipisci suscipit.
+            </p>
+        </div>
+    </div>
+    <br>
+    <script src="main.js"></script>
+</body>
+
+</html>
